@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  padding: 20px;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 768px;
+}
+
+#container {
+  clear: both;
+  margin: auto;
+  width: 50%;
+  height: 0;
+  padding-bottom: 80%;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+#container div {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: ease-in-out 0.5s all;
+  -moz-transition: ease-in-out 0.5s all;
+  -ms-transition: ease-in-out 0.5s all;
+  -o-transition: ease-in-out 0.5s all;
+  transition: ease-in-out 0.5s all;
+}
+
+#container div p {
+  position: absolute;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 14px;
+  line-height: 14px;
+  top: 50%;
+  margin-top: -7px;
+  left: -80px;
+}
+
+#container div p::before {
+  content: ' ';
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background-color: black;
+  left: 100%;
+  margin-left: 5px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+#container .base {
+  background-color: #5bc0de;
+}
+
+#container .liquid {
+  background-color: #1ea8d2;
+}
+
+#container .nicotine {
+  background-color: #097c9f;
+}
+
+#container .flavor {
+  background-color: #9cdef2;
+}
+
+#container .pg,
+#container .vg{
+  left: auto;
+  right: 0;
+  width: 50%;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#container.pg-vg-mix .pg {
+  border-bottom: 1px solid black;
+}
+
+#container.pg-vg-mix .vg {
+  border-top: 1px solid black;
+}
+
+.inputs, .outputs {
+  float: left;
+  width: 50%;
+}
+
+label {
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+}
+
+h1, h2, h3 {
+  float: left;
+  width: 100%;
+}

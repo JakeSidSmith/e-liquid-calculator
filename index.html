@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>DIY E-Liquid Calculator</title>
+  <link rel="stylesheet" href="css/index.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>
+      DIY E-Liquid Calculator
+    </h1>
+    <div class="inputs">
+      <h2>
+        Input
+      </h2>
+      <label>
+        Base ml
+        <input value="50ml" />
+      </label>
+      <label>
+        Base VG%
+        <input value="100%" />
+      </label>
+      <label>
+        E-Liquid ml
+        <input value="10ml" />
+      </label>
+      <label>
+        E-Liquid VG%
+        <input value="100%" />
+      </label>
+      <label>
+        E-Liquid Nicotine%
+        <input value="2.7%" />
+      </label>
+      <label>
+        Flavor ml
+        <input value="7ml" />
+      </label>
+      <label>
+        Flavor VG%
+        <input value="0%" />
+      </label>
+    </div>
+    <div class="outputs" id="results">
+      <h2>
+        Output
+      </h2>
+      <label>
+        Base %
+        <input disabled="true" />
+      </label>
+      <label>
+        E-Liquid %
+        <input disabled="true" />
+      </label>
+      <label>
+        Flavor %
+        <input disabled="true" />
+      </label>
+      <label>
+        Nicotine %
+        <input disabled="true" />
+      </label>
+      <label>
+        VG %
+        <input disabled="true" />
+      </label>
+      <label>
+        Total ml
+        <input disabled="true" />
+      </label>
+    </div>
+
+    <h2>
+      Visualisation
+    </h2>
+
+    <div id="container">
+      <div class="base">
+        <p>
+          <span></span>
+          Base
+        </p>
+      </div>
+      <div class="liquid">
+        <p>
+          <span></span>
+          E-Liquid
+        </p>
+        <div class="nicotine">
+          <p>
+            <span></span>
+            Nicotine
+          </p>
+        </div>
+      </div>
+      <div class="flavor">
+        <p>
+          <span></span>
+          Flavor
+        </p>
+      </div>
+      <div class="vg">
+        <p>
+          <span></span>
+          VG
+        </p>
+      </div>
+      <div class="pg">
+        <p>
+          <span></span>
+          PG
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
