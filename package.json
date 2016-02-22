@@ -26,10 +26,9 @@
   },
   "homepage": "https://github.com/jakesidsmith/e-liquid-calculator",
   "dependencies": {
-    "jquery": "^>=2.1.4"
   },
   "devDependencies": {
-    "eslint": ">=1.3.1",
-    "http-server": ">=0.8.0"
+    "eslint": "=1.3.1",
+    "http-server": "=0.8.0"
   }
 }

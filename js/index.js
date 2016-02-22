@@ -63,27 +63,27 @@
       (liquidPercentageVal * liquidVgVal) +
       (flavorPercentageVal * flavorVgVal);
 
-      console.log(
-        [
-          baseMlVal,
-          baseVgVal,
-          liquidMlVal,
-          liquidVgVal,
-          liquidNVal,
-          flavorMlVal,
-          flavorVgVal,
-          'Total ml',
-          totalMlVal,
-          'Base %',
-          basePercentageVal,
-          'Liquid %',
-          liquidPercentageVal,
-          'Flavor %',
-          flavorPercentageVal,
-          'Nicotine %',
-          nicotinePercentageVal
-        ].join('\n')
-      );
+      // console.log(
+      //   [
+      //     baseMlVal,
+      //     baseVgVal,
+      //     liquidMlVal,
+      //     liquidVgVal,
+      //     liquidNVal,
+      //     flavorMlVal,
+      //     flavorVgVal,
+      //     'Total ml',
+      //     totalMlVal,
+      //     'Base %',
+      //     basePercentageVal,
+      //     'Liquid %',
+      //     liquidPercentageVal,
+      //     'Flavor %',
+      //     flavorPercentageVal,
+      //     'Nicotine %',
+      //     nicotinePercentageVal
+      //   ].join('\n')
+      // );
 
       basePercentage.val(toPercentage(basePercentageVal));
       liquidPercentage.val(toPercentage(liquidPercentageVal));
